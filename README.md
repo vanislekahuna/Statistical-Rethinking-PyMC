@@ -1,21 +1,19 @@
-# Statistical Rethinking (second edition) with Python and PyMC
+# **Statistical Rethinking with Python and PyMC**
 
-[Statistical Rethinking](http://xcelab.net/rm/statistical-rethinking/) is an incredible introductory book to Bayesian Statistics. It follows a [_Jaynesian_](https://en.wikipedia.org/wiki/Edwin_Thompson_Jaynes) and practical approach with very good examples and clear explanations.
+[Statistical Rethinking](http://xcelab.net/rm/statistical-rethinking/) is an incredible resource for learning Bayesian Statistics and was written by [Richard McElreath](https://xcelab.net/rm/), a Full Professor of Anthropology at the [Max Planck Institute for Evolutionary Anthropology](https://www.eva.mpg.de/ecology/staff/richard-mcelreath/). Aside from his intuitive explanations of Bayesian concepts, Statistical Rethinking also includes code written in `R` to express the logic of the statistical theories as an alternative to the equations we're used to seeing in math textbooks. Coupled with data to manipulate, the book is very effective in testing the logic of the mathematical models and watching the theory play out through real-world examples as represented by the data. In addition to the textbook,  Prof. McElreath has also released a complimentary playlist [video lectures](https://www.youtube.com/playlist?list=PLDcUM9US4XdM9_N6XUUFrhghGJ4K25bFc) for the textbook as another resource for understanding the ideas explained in the text.
 
-In this repository we port [the book's original code in R and Stan](https://github.com/rmcelreath/rethinking) to Python and PyMC. We attempt to reproduce the examples as faithfully as possible while expressing them in a _Pythonic_ and _PyMConic_ way.
+As great of a source as the textbook is, one of its key drawbacks is that it requires the reader to have a proficient understanding of the syntax of `R` to read, run, and manipulate the code presented in the textbook. Luckily, the core dev team and other selfless contributors at [PyMC](https://github.com/pymc-devs/) has offered another alternative to interacting with this resource by porting the `R` code to `Python`. By utilizing `Python` libraries such as `pymc`,`arviz`, `numpy`, and `scipy`, they were able to create `Python` equivalents to the code that Prof. McElreath wrote in the textbook for the readers that are only familiar with `Python` syntax. Their contributions can be found in this [Github repository](https://github.com/pymc-devs/pymc-resources/tree/main/Rethinking_2).
 
-## Display notebooks
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/pymc-devs/resources/main?filepath=Rethinking_2)
-[<img src="http://nbviewer.jupyter.org/static/img/nav_logo.svg" width=120>](http://nbviewer.jupyter.org/github/pymc-devs/resources/blob/main/Rethinking_2)
+With the foundation that they've laid, we're aiming to take their project one step further by forking their original [repository](https://github.com/pymc-devs/pymc-resources/tree/main/Rethinking_2), along with all the code examples written in Jupyter Notebooks, and adding our own summaries of the textbook material alongside each of the Python-ported code examples in the notebooks. By paraphrasing the textbook material in the Jupyter Notebooks that the [PyMC](https://www.pymc.io/welcome.html) team started, we're aiming to reduce the friction of having to switch back and forth between the textbook and the code examples for a learner who's only proficient in Python. We strongly believe that [Statistical Rethinking](https://www.routledge.com/Statistical-Rethinking-A-Bayesian-Course-with-Examples-in-R-and-STAN/McElreath/p/book/9780367139919) is an intuitive resource for building a solid foundation in the world of Bayes and with this project, our goal is to make your first steps as seamless as possible. Happy Learning!
 
+<br>
 
-## Contributing
+**APA Reference:**
 
-All contributions are welcome!
+McElreath, R. (2020). *Statistical Rethinking: A Bayesian Course with examples in R and Stan.* Routledge.
 
-Feel free to send PRs to fix errors, improve the code, or make comments that could help users of this repository and readers of the book. When submitting PRs, please make sure the notebooks are formatted according to the [PyMC NB style guide](https://github.com/pymc-devs/pymc/wiki/PyMC's-Jupyter-Notebook-Style).
-
-You can also join the discussion on [Gitter](https://gitter.im/Statistical-Rethinking-with-Python-and-PyMC/Lobby).
+<br>
+<br>
 
 ## Installing the dependencies
 
@@ -23,7 +21,7 @@ To install the dependencies to run these notebooks, you can use [Anaconda](https
 
     conda env create -f environment.yml
 
-to install all the dependencies into an isolated environment. 
+to install all the dependencies into an isolated environment.
 
 Activate the environment by running:
 
@@ -42,19 +40,3 @@ or use the more modern jupyter lab:
     jupyter lab
     
 from the root directory.
-
-## PyMC v4 Updates
-
-Work is on-going to update these notebooks to be compatible with PyMC v4. Currently chapters 2 through 14 have been converted.
-
-If you wish to run these notebooks, please create the v4 environment by running:
-
-    conda env create -f environment_v4.yml
-
-and activate it with:
-
-    source activate stat-rethink2-pymc_v4
-    
----
-
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span>Statistical Rethinking with Python and PyMC</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/aloctavodia/Statistical-Rethinking-with-Python-and-PyMC/graphs/contributors" property="cc:attributionName" rel="cc:attributionURL">All Contributors</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
