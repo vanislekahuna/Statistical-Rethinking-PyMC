@@ -6,37 +6,10 @@ As great of a source as the textbook is, one of its key drawbacks is that it req
 
 With the foundation that they've laid, we're aiming to take their project one step further by forking their original [repository](https://github.com/pymc-devs/pymc-resources/tree/main/Rethinking_2), along with all the code examples written in Jupyter Notebooks, and adding our own summaries of the textbook material alongside each of the Python-ported code examples in the notebooks. By paraphrasing the textbook material in the Jupyter Notebooks that the [PyMC](https://www.pymc.io/welcome.html) team started, we're aiming to reduce the friction of having to switch back and forth between the textbook and the code examples for a learner who's only proficient in Python. We strongly believe that [Statistical Rethinking](https://www.routledge.com/Statistical-Rethinking-A-Bayesian-Course-with-Examples-in-R-and-STAN/McElreath/p/book/9780367139919) is an intuitive resource for building a solid foundation in the world of Bayes and with this project, our goal is to make your first steps as seamless as possible. Happy Learning!
 
+Each `.ipynb` file should have the ability to run independently by clicking the "Open in Colab" button at the top of every notebook.
+
 <br>
 
 **APA Reference:**
 
 McElreath, R. (2020). *Statistical Rethinking: A Bayesian Course with examples in R and Stan.* Routledge.
-
-<br>
-<br>
-
-## Installing the dependencies
-
-To install the dependencies to run these notebooks, you can use [Anaconda](https://www.anaconda.com/products/individual#Downloads). Once you have installed Anaconda, run:
-
-    conda env create -f environment.yml
-
-to install all the dependencies into an isolated environment.
-
-Activate the environment by running:
-
-    source activate stat-rethink2-pymc
-
-To use the notebooks you first have to register your new environment as a valid notebook kernel:
-
-    python -m ipykernel install --user --name stat-rethink2-pymc3 --display-name "Python 3.10 (stat-rethink2-pymc3)"
-
-You can start a notebook by running:
-    
-    jupyter notebook
-
-or use the more modern jupyter lab:
-    
-    jupyter lab
-    
-from the root directory.
