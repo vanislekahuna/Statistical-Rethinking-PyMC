@@ -17,27 +17,27 @@ chapters:
   - file: Chp_06
     title: Chapter 6 - The Haunted DAG & The Causal Terror
   - file: Chp_07
-    title: Chapter 7 - Ulysses' Compass
-  - file: Chp_08
-    title: Chapter 8 - Conditional Manatees
-  - file: Chp_09
-    title: Chapter 9 - Markov Chain Monte Carlo
-  - file: Chp_10
-    title: Chapter 10 - Big Entropy and the Generalized Linear Model
-  - file: Chp_11
-    title: Chapter 11 - God Spiked the Integers
-  - file: Chp_12
-    title: Chapter 12 - Monsters and Mixtures
-  - file: Chp_13
-    title: Chapter 13 - Models With Memory
-  - file: Chp_14
-    title: Chapter 14 - Adventures in Covariance
-  - file: Chp_15
-    title: Chapter 15 - Missing Data and Other Opportunities
-  - file: Chp_16
-    title: Chapter 16 - Generalized Linear Madness
-  - file: Chp_17
-    title: Chapter 17 - Horoscopes
+  #   title: Chapter 7 - Ulysses' Compass
+  # - file: Chp_08
+  #   title: Chapter 8 - Conditional Manatees
+  # - file: Chp_09
+  #   title: Chapter 9 - Markov Chain Monte Carlo
+  # - file: Chp_10
+  #   title: Chapter 10 - Big Entropy and the Generalized Linear Model
+  # - file: Chp_11
+  #   title: Chapter 11 - God Spiked the Integers
+  # - file: Chp_12
+  #   title: Chapter 12 - Monsters and Mixtures
+  # - file: Chp_13
+  #   title: Chapter 13 - Models With Memory
+  # - file: Chp_14
+  #   title: Chapter 14 - Adventures in Covariance
+  # - file: Chp_15
+  #   title: Chapter 15 - Missing Data and Other Opportunities
+  # - file: Chp_16
+  #   title: Chapter 16 - Generalized Linear Madness
+  # - file: Chp_17
+  #   title: Chapter 17 - Horoscopes
 
 # To add a new chapter:
 # 1. Add your Chp_XX.ipynb or Chp_XX.md file to the repository
