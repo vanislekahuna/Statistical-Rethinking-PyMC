@@ -79,3 +79,5 @@ exclude_patterns:
   - README.md
   - requirements.txt
   - setup.sh
+  - Data
+  - Bayes-Textbook-Images
