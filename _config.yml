@@ -1,0 +1,81 @@
+# Jupyter Book Configuration for Statistical Rethinking with PyMC
+# Place this file in the ROOT of your Statistical-Rethinking-PyMC repository
+
+title: Statistical Rethinking with PyMC
+author: Ruiz Rivera
+copyright: "2024"
+# logo: logo.png  # Optional: add your logo file to the root
+
+# Execution settings
+execute:
+  execute_notebooks: off  # Don't re-execute notebooks during build (faster)
+  timeout: 300
+  allow_errors: false
+
+# LaTeX settings for PDF export (optional)
+latex:
+  latex_documents:
+    targetname: statistical-rethinking-pymc.tex
+
+# Bibliography
+bibtex_bibfiles:
+  - references.bib
+
+# Repository information
+repository:
+  url: https://github.com/vanislekahuna/Statistical-Rethinking-PyMC
+  path_to_book: .
+  branch: main
+
+# HTML theme configuration
+html:
+  use_issues_button: true
+  use_repository_button: true
+  use_edit_page_button: true
+  extra_navbar: |
+    <div style="margin-top: 10px;">
+      <a href="https://vanislekahuna.github.io" style="color: #2196F3;">← Back to Main Site</a>
+    </div>
+  google_analytics_id: ""  # Optional: add your Google Analytics ID
+
+# Launch buttons for interactive notebooks
+launch_buttons:
+  notebook_interface: "jupyterlab"
+  binderhub_url: ""
+  colab_url: "https://colab.research.google.com"
+  thebe: true
+
+# Sphinx configuration
+sphinx:
+  config:
+    html_theme_options:
+      repository_url: https://github.com/vanislekahuna/Statistical-Rethinking-PyMC
+      use_repository_button: true
+      use_issues_button: true
+      home_page_in_toc: true
+    bibtex_reference_style: author_year
+    
+# Parse and render settings
+parse:
+  myst_enable_extensions:
+    - amsmath
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_image
+    - linkify
+    - replacements
+    - smartquotes
+    - substitution
+
+# Exclude patterns
+exclude_patterns:
+  - _build
+  - .git
+  - .github
+  - Thumbs.db
+  - .DS_Store
+  - "**.ipynb_checkpoints"
+  - README.md
+  - requirements.txt
+  - setup.sh
