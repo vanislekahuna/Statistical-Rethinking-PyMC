@@ -131,3 +131,5 @@ exclude_patterns:
   - Bayes-Textbook-Images
   - .pytest_cache #Added
   - "**.pytest_cache" #Added
+  - environment.yml  #Added
+  - environment_v4.yml  #Added

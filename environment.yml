@@ -16,8 +16,8 @@ dependencies:
   - pip:
     - daft
     - causalgraphicalmodels
-     - watermark
-     - "git+git://github.com/arviz-devs/arviz.git@main"
-     - "git+git://github.com/pymc-devs/pymc.git@main"
-     - causalgraphicalmodels
-     - daft
+    - watermark
+    - "git+git://github.com/arviz-devs/arviz.git@main"
+    - "git+git://github.com/pymc-devs/pymc.git@main"
+    - causalgraphicalmodels
+    - daft
