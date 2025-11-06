@@ -3,8 +3,8 @@
 
 title: Statistical Rethinking with PyMC
 author: Ruiz Rivera
-copyright: "2024"
-logo: https://raw.githubusercontent.com/vanislekahuna/jekyll-now/master/images/Twilight-Lycanroc-Klima.png  # Optional: add your logo file to the root
+copyright: "2025"
+# logo: https://raw.githubusercontent.com/vanislekahuna/jekyll-now/master/images/Twilight-Lycanroc-Klima.png  # Optional: add your logo file to the root
 
 # Execution settings
 execute:
@@ -35,11 +35,26 @@ html:
   home_page_in_navbar: true #Added
   navbar_number_sections: false #Added
   announcement: "" #Added
+
+  ### New Nav Bar Styling ###
   extra_navbar: |
-    <div style="margin-top: 10px;">
-      <a href="https://vanislekahuna.github.io" style="color: #2196F3;">← Back to Main Site</a>
+    <div style="margin: 10px 0; padding: 10px; border-top: 1px solid #e1e4e8;">
+      <a href="https://vanislekahuna.github.io" style="color: #2196F3; text-decoration: none; font-weight: 500;">
+        ← Home Page
+      </a>
     </div>
+
+  ### OLD Nav Bar styling ##
+  # extra_navbar: |
+  #   <div style="margin-top: 10px;">
+  #     <a href="https://vanislekahuna.github.io" style="color: #2196F3;">← Back to Main Site</a>
+  #   </div>
+
+  extra_footer: "" #Added
   google_analytics_id: ""  # Optional: add your Google Analytics ID
+  comments: #Added
+    hypothesis: false #Added
+    utterances: false #Added
 
 # Launch buttons for interactive notebooks
 launch_buttons:
@@ -75,8 +90,6 @@ sphinx:
         </div>
     bibtex_reference_style: author_year
     html_show_sourcelink: true
-    html_sidebars:
-      "**": ["sidebar-logo.html", "search-field.html", "sbt-sidebar-nav.html"]
 
 
 ### OLD Sphinx configuration ###
