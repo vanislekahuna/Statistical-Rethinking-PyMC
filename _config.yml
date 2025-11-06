@@ -127,8 +127,8 @@ exclude_patterns:
   - README.md
   - requirements.txt
   - setup.sh
-  - Data
-  - Bayes-Textbook-Images
+  - Data/**           # CHANGED: Excluding everything
+  - Bayes-Textbook-Images/**           # CHANGED: Excluding everything
   - .pytest_cache #Added
   - "**.pytest_cache" #Added
   - environment.yml  #Added
