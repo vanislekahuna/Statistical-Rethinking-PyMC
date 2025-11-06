@@ -4,7 +4,7 @@
 title: Statistical Rethinking with PyMC
 author: Ruiz Rivera
 copyright: "2024"
-# logo: logo.png  # Optional: add your logo file to the root
+logo: https://raw.githubusercontent.com/vanislekahuna/jekyll-now/master/images/Twilight-Lycanroc-Klima.png  # Optional: add your logo file to the root
 
 # Execution settings
 execute:
@@ -32,6 +32,9 @@ html:
   use_issues_button: true
   use_repository_button: true
   use_edit_page_button: true
+  home_page_in_navbar: true #Added
+  navbar_number_sections: false #Added
+  announcement: "" #Added
   extra_navbar: |
     <div style="margin-top: 10px;">
       <a href="https://vanislekahuna.github.io" style="color: #2196F3;">← Back to Main Site</a>
@@ -40,20 +43,51 @@ html:
 
 # Launch buttons for interactive notebooks
 launch_buttons:
-  notebook_interface: "jupyterlab"
+  notebook_interface: "classic" #Changed from: "jupyterlab"
   binderhub_url: ""
   colab_url: "https://colab.research.google.com"
   thebe: true
 
-# Sphinx configuration
+#  NEW Sphinx configuration
 sphinx:
+  extra_extensions: []
   config:
+    html_theme: sphinx_book_theme
     html_theme_options:
       repository_url: https://github.com/vanislekahuna/Statistical-Rethinking-PyMC
+      repository_branch: main
+      path_to_docs: .
       use_repository_button: true
       use_issues_button: true
+      use_edit_page_button: true
+      use_download_button: true
+      use_fullscreen_button: true
       home_page_in_toc: true
+      show_navbar_depth: 2
+      show_toc_level: 2
+      navigation_with_keys: true
+      collapse_navigation: false
+      extra_navbar: |
+        <div style="margin: 10px 0; padding: 10px; border-top: 1px solid #e1e4e8;">
+          <a href="https://vanislekahuna.github.io" style="color: #2196F3; text-decoration: none; font-weight: 500;">
+            ← Home Page
+          </a>
+        </div>
     bibtex_reference_style: author_year
+    html_show_sourcelink: true
+    html_sidebars:
+      "**": ["sidebar-logo.html", "search-field.html", "sbt-sidebar-nav.html"]
+
+
+### OLD Sphinx configuration ###
+# sphinx:
+#   config:
+#     html_theme_options:
+#       repository_url: https://github.com/vanislekahuna/Statistical-Rethinking-PyMC
+#       use_repository_button: true
+#       use_issues_button: true
+#       home_page_in_toc: true
+#     bibtex_reference_style: author_year
     
 # Parse and render settings
 parse:
@@ -67,6 +101,7 @@ parse:
     - replacements
     - smartquotes
     - substitution
+  myst_url_schemes: [mailto, http, https] #Added
 
 # Exclude patterns
 exclude_patterns:
@@ -81,3 +116,5 @@ exclude_patterns:
   - setup.sh
   - Data
   - Bayes-Textbook-Images
+  - .pytest_cache #Added
+  - "**.pytest_cache" #Added
