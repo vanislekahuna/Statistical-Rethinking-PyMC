@@ -35,6 +35,7 @@ html:
   home_page_in_navbar: true #Added
   navbar_number_sections: false #Added
   announcement: "" #Added
+  baseurl: /Statistical-Rethinking-PyMC/ #Added
 
   ### New Nav Bar Styling ###
   extra_navbar: |
