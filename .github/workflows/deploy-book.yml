@@ -48,7 +48,6 @@ jobs:
       
       - name: Build Jupyter Book
         run: |
-          jupyter-book clean . --all
           jupyter-book build .
       
       - name: Upload artifact
