@@ -4,17 +4,17 @@
 format: jb-book
 root: intro
 chapters:
-  - file: Chp_01
+  - file: Chp_01.md
     title: Chapter 1 - The Golem of Prague
-  - file: Chp_02
+  - file: Chp_02.ipynb
     title: Chapter 2 - Small Worlds and Large Worlds
-  - file: Chp_03
+  - file: Chp_03.ipynb
     title: Chapter 3 - Sampling the Imaginary
-  - file: Chp_04
+  - file: Chp_04.ipynb
     title: Chapter 4 - Geocentric Models
-  - file: Chp_05
+  - file: Chp_05.ipynb
     title: Chapter 5 - The Many Variables & The Spurious Waffles
-  - file: Chp_06
+  - file: Chp_06.ipynb
     title: Chapter 6 - The Haunted DAG & The Causal Terror
   # - file: Chp_07
   #   title: Chapter 7 - Ulysses' Compass
