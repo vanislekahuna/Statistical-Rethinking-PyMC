@@ -56,10 +56,13 @@ jobs:
           cat _config.yml || true
           echo "---- repo tree (top) ----"
           find . -maxdepth 2 -print
+
+      - name: Check jupyter-book executable
+        run: which jupyter-book && jupyter-book --version
       
       - name: Build Jupyter Book
         run: |
-          jupyter-book build .
+          python -m jupyter_book build .
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
