@@ -3,9 +3,11 @@
 
 format: jb-book
 root: intro
+options:
+  titlesonly: true
 chapters:
   - file: Chp_01
-    title: "Chapter 1 - The Golem of Prague"
+    title: Chapter 1 - The Golem of Prague
   - file: Chp_02
     title: "Chapter 2 - Small Worlds and Large Worlds"
   - file: Chp_03
