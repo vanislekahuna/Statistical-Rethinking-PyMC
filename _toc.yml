@@ -5,17 +5,17 @@ format: jb-book
 root: intro
 chapters:
   - file: Chp_01
-    title: Chapter 1 - The Golem of Prague
+    title: "Chapter 1 - The Golem of Prague"
   - file: Chp_02
-    title: Chapter 2 - Small Worlds and Large Worlds
+    title: "Chapter 2 - Small Worlds and Large Worlds"
   - file: Chp_03
-    title: Chapter 3 - Sampling the Imaginary
+    title: "Chapter 3 - Sampling the Imaginary"
   - file: Chp_04
-    title: Chapter 4 - Geocentric Models
+    title: "Chapter 4 - Geocentric Models"
   - file: Chp_05
-    title: Chapter 5 - The Many Variables & The Spurious Waffles
+    title: "Chapter 5 - The Many Variables & The Spurious Waffles"
   - file: Chp_06
-    title: Chapter 6 - The Haunted DAG & The Causal Terror
+    title: "Chapter 6 - The Haunted DAG & The Causal Terror"
   # - file: Chp_07
   #   title: Chapter 7 - Ulysses' Compass
   # - file: Chp_08
