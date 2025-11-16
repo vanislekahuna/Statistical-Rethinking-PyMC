@@ -40,29 +40,23 @@ jobs:
           python-version: '3.10'
           cache: 'pip'
       
+      - name: Remove Jupyter Book 2.x
+        run: pip uninstall -y jupyter-book || true
+
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install jupyter-book
+          pip install "jupyter-book<2.0"
           pip install -r requirements.txt || echo "No additional requirements to install"
 
-      - name: Show repo & config
+      - name: Check jupyter-book version
         run: |
-          pwd
-          ls -la
-          echo "---- _toc.yml ----"
-          cat _toc.yml || true
-          echo "---- _config.yml ----"
-          cat _config.yml || true
-          echo "---- repo tree (top) ----"
-          find . -maxdepth 2 -print
-
-      - name: Check jupyter-book executable
-        run: which jupyter-book && jupyter-book --version
+          which jupyter-book
+          jupyter-book --version
       
       - name: Build Jupyter Book
         run: |
-          python -m jupyter_book build .
+          jupyter-book build .
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
