@@ -5,13 +5,13 @@ on:
   push:
     branches:
       - main
-    # paths:
-    #   - 'Chp_*.ipynb'
-    #   - 'Chp_*.md'
-    #   - '_config.yml'
-    #   - '_toc.yml'
-    #   - 'intro.md'
-    #   - '.github/workflows/deploy-book.yml'
+    paths:
+      - 'Chp_*.ipynb'
+      - 'Chp_*.md'
+      - '_config.yml'
+      - '_toc.yml'
+      - 'intro.md'
+      - '.github/workflows/deploy-book.yml'
   
   # Allow manual trigger
   workflow_dispatch:
@@ -48,7 +48,7 @@ jobs:
       
       - name: Build Jupyter Book
         run: |
-          jupyter-book build .
+          jupyter-book build --all .
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
