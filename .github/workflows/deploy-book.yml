@@ -45,6 +45,17 @@ jobs:
           pip install --upgrade pip
           pip install jupyter-book
           pip install -r requirements.txt || echo "No additional requirements to install"
+
+      - name: Show repo & config
+        run: |
+          pwd
+          ls -la
+          echo "---- _toc.yml ----"
+          cat _toc.yml || true
+          echo "---- _config.yml ----"
+          cat _config.yml || true
+          echo "---- repo tree (top) ----"
+          find . -maxdepth 2 -print
       
       - name: Build Jupyter Book
         run: |
