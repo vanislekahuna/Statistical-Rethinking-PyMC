@@ -4,7 +4,7 @@
 title: Statistical Rethinking with PyMC
 author: Ruiz Rivera
 copyright: "2025"
-# logo: https://raw.githubusercontent.com/vanislekahuna/jekyll-now/master/images/Twilight-Lycanroc-Klima.png  # Optional: add your logo file to the root
+logo: https://raw.githubusercontent.com/vanislekahuna/jekyll-now/master/images/Twilight-Lycanroc-Klima.png  # Optional: add your logo file to the root
 
 # Execution settings
 execute:
