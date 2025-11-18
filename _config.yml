@@ -82,7 +82,15 @@ sphinx:
       show_toc_level: 2
       navigation_with_keys: true
       collapse_navigation: false
+      logo:
+        link: https://vanislekahuna.github.io/
+      home_page_in_navbar: false
       extra_navbar: |
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="https://vanislekahuna.github.io" style="color: inherit; text-decoration: none;">
+            Statistical Rethinking with PyMC
+          </a>
+        </div>
         <div style="margin: 10px 0; padding: 10px; border-top: 1px solid #e1e4e8;">
           <a href="https://vanislekahuna.github.io" style="color: #2196F3; text-decoration: none; font-weight: 500;">
             ← Home Page
