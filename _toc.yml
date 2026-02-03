@@ -18,8 +18,8 @@ chapters:
     title: "Chapter 5 - The Many Variables & The Spurious Waffles"
   - file: Chp_06
     title: "Chapter 6 - The Haunted DAG & The Causal Terror"
-  # - file: Chp_07
-  #   title: Chapter 7 - Ulysses' Compass
+  - file: Chp_07
+    title: Chapter 7 - Ulysses' Compass
   # - file: Chp_08
   #   title: Chapter 8 - Conditional Manatees
   # - file: Chp_09
