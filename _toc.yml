@@ -20,8 +20,8 @@ chapters:
     title: "Chapter 6 - The Haunted DAG & The Causal Terror"
   - file: Chp_07
     title: Chapter 7 - Ulysses' Compass
-  # - file: Chp_08
-  #   title: Chapter 8 - Conditional Manatees
+  - file: Chp_08
+    title: Chapter 8 - Conditional Manatees
   # - file: Chp_09
   #   title: Chapter 9 - Markov Chain Monte Carlo
   # - file: Chp_10
