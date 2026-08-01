@@ -22,8 +22,8 @@ chapters:
     title: Chapter 7 - Ulysses' Compass
   - file: Chp_08
     title: Chapter 8 - Conditional Manatees
-  # - file: Chp_09
-  #   title: Chapter 9 - Markov Chain Monte Carlo
+  - file: Chp_09
+    title: Chapter 9 - Markov Chain Monte Carlo
   # - file: Chp_10
   #   title: Chapter 10 - Big Entropy and the Generalized Linear Model
   # - file: Chp_11
